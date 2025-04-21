@@ -31,7 +31,9 @@ public class Usuario {
 
     private String password;
 
-    private List<Partida> historial;
+    private List<String> historial;
+    
+    private List<String> IDsolicitudes;
     
     private LocalDate fechaCreacion;
 
@@ -81,6 +83,14 @@ public class Usuario {
 
 	public void setFechaCreacion(LocalDate fechaCreacion) {
 		this.fechaCreacion = fechaCreacion;
+	}
+
+	public List<String> getIDsolicitudes() {
+		return IDsolicitudes;
+	}
+
+	public void setIDsolicitudes(List<String> iDsolicitudes) {
+		IDsolicitudes = iDsolicitudes;
 	}
 
 }
