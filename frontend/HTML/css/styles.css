@@ -1,0 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=MedievalSharp&display=swap');
+:root { /*Si he usado variables para no repetir el mismo color 20 veces*/
+  --color-oscuro: #ff0000; 
+  --color-medio: #6a5a4d;
+  --color-claro: #8b7b5b;
+  --color-dorado: #b8a76b;
+  --color-pergamino: #d9c57d; 
+  } 
+body {
+background-color: var(--color-pergamino);
+color: var(--color-oscuro);
+font-family: 'EB Garamond', serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background: url("/media/pergamino-textura.png") no-repeat center center fixed;
+background-size: cover; 
+}
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Cinzel', serif;
+font-weight: bold;
+color: var(--color-oscuro);
+text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+a {
+color: var(--color-dorado);
+text-decoration: none;
+}
+a:hover, a:focus {
+color: var(--color-medio);
+text-decoration: underline;
+} 
+.navbar {
+background-color: var(--color-oscuro);
+border-bottom: 3px solid var(--color-dorado);
+box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.navbar .navbar-brand {
+font-family: 'MedievalSharp', sans-serif;
+color: var(--color-pergamino);
+font-size: 1.5rem;
+}
+.navbar .nav-link {
+color: var(--color-pergamino);
+padding: 0.5rem 1rem;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+color: var(--color-dorado);
+} 
+.btn {
+border-radius: 0;
+font-weight: bold;
+}
+.btn-primary {
+background-color: var(--color-dorado);
+border: 1px solid var(--color-oscuro);
+color: var(--color-oscuro);
+box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+}
+.btn-primary:hover, .btn-primary:focus {
+background-color: var(--color-medio);
+color: var(--color-pergamino);
+border-color: var(--color-dorado);
+}
+.btn-secondary {
+background-color: var(--color-medio);
+border: 1px solid var(--color-oscuro);
+color: var(--color-pergamino);
+}
+.btn-secondary:hover, .btn-secondary:focus {
+background-color: var(--color-oscuro);
+color: var(--color-dorado);
+} 
+.btn-map-style {
+  background: radial-gradient(circle at center, #d2b48c 20%, #a67c52 100%);
+  color: #2f1b0c;
+  font-weight: bold;
+  font-family: 'IM Fell English', serif;
+  border: 2px solid #5c4422;
+  border-radius: 10px;
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.4), 0 0 8px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 0px #f8f1e7;
+}
+
+.btn-map-style:hover {
+  background: radial-gradient(circle at center, #e0c49a 20%, #8b5e34 100%);
+  box-shadow: 0 0 10px #7c5e3d;
+  transform: scale(1.03);
+  color: #1f1005;
+}
+
+.card {
+background-color: var(--color-pergamino);
+border: 2px solid var(--color-medio);
+border-radius: 0;
+box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+.card-header {
+background-color: var(--color-medio);
+color: var(--color-pergamino);
+font-family: 'Cinzel', serif;
+border-bottom: 1px solid var(--color-dorado);
+}
+.card-body {
+color: var(--color-dorado);
+}
+.card-title {
+font-family: 'Cinzel', serif;
+color: var(--color-dorado);
+} 
+.form-control {
+background-color: #f7f0e9; 
+border: 1px solid var(--color-medio);
+border-radius: 0;
+color: var(--color-dorado);
+}
+.form-control:focus {
+border-color: var(--color-dorado);
+box-shadow: 0 0 5px rgba(184, 167, 107, 0.5);
+}
+.form-label {
+font-weight: bold;
+color: var(--color-dorado);
+} 
+#tfiltros{
+  font-weight: bold;
+color: var(--color-dorado);
+}
+.form-check-label{
+  color:var(--color-dorado)
+}
+.alert {
+border-radius: 0;
+padding: 0.75rem 1rem;
+margin-bottom: 1rem;
+}
+.alert-info {
+background-color: #fff7e6;
+border: 1px solid var(--color-medio);
+color: var(--color-oscuro);
+}
+.alert-warning {
+background-color: #fef7e3;
+border: 1px solid var(--color-dorado);
+color: var(--color-oscuro);
+}
+.alert-danger {
+background-color: #f2dede;
+border: 1px solid #b94a48;
+color: #a94442;
+} 
+.bg-gradient-cuero {
+background: linear-gradient(135deg, var(--color-oscuro) 0%, var(--color-medio) 100%);
+}
+.bg-gradient-pergamino {
+background: radial-gradient(circle at top left, #fefcea 0%, var(--color-pergamino) 80%);
+} 
+.shadow-suave {
+box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+} 
+@media (max-width: 768px) {
+h1 { font-size: 1.75rem; }
+h2 { font-size: 1.5rem; }
+.navbar .navbar-brand { font-size: 1.25rem; }
+.card { margin-bottom: 1rem; }
+}
+.section-bg {
+  background: url('/media/pergamino-textura.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: var(--color-pergamino);
+}
+.scroll-bg {
+  background-image: url('/media/pergamino-textura.png');
+  background-repeat: repeat-y;          
+  background-size: cover;                 
+  background-attachment: fixed;          
+  background-position: center top;
+}
+
+.fantasy-title {
+  display: block;
+  font-family: 'MedievalSharp', serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-oscuro);
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.card-fantasy {
+  background-color: var(--color-pergamino);
+  border: 2px solid var(--color-medio);
+  border-radius: 0;
+}
+
+.btn-fantasy {
+  background-color: var(--color-dorado);
+  color: var(--color-oscuro);
+  font-weight: bold;
+  border: 1px solid var(--color-medio);
+  border-radius: 0;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+.btn-fantasy:hover {
+  background-color: var(--color-medio);
+  color: var(--color-pergamino);
+}
+.parchment-text {
+  font-family: 'IM Fell English', serif;
+  font-size: 1.2rem;
+  color: #3b2f2f;
+}
+.parchment-divider {
+  border-top: 2px dashed #8b5e34;
+  margin: 1.5rem 0;
+}
+.fantasy-subtitle {
+  font-family: 'Cinzel', serif;
+  font-size: 1.5rem;
+  color: #000000;
+}
+.link-fantasy {
+  color: #5a3e1a;
+  font-weight: 600;
+  text-decoration: underline dotted;
+}
+
+.link-fantasy:hover {
+  color: #a67c52;
+}
+.alert-warning {
+  background-color: rgba(255, 248, 220, 0.85);
+  border: 2px solid #a67c52;
+  font-family: 'IM Fell English', serif;
+  box-shadow: 0 0 8px rgba(90, 60, 20, 0.5);
+  border-radius: 8px;
+}
+#solicitantesList .solicitante-item {
+  background-color: var(--color-pergamino);
+  border: 2px solid var(--color-medio);
+  border-radius: 0;
+  color: var(--color-oscuro);
+  font-family: 'IM Fell English', serif;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+#solicitantesList .btn-accept {
+  background-color: var(--color-dorado);
+  color: var(--color-oscuro);
+  border: 1px solid var(--color-medio);
+  border-radius: 0;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+#solicitantesList .btn-accept:hover {
+  background-color: var(--color-medio);
+  color: var(--color-pergamino);
+}
+
+#solicitantesList .btn-reject {
+  background-color: var(--color-oscuro);
+  color: var(--color-pergamino);
+  border: 1px solid var(--color-medio);
+  border-radius: 0;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+#solicitantesList .btn-reject:hover {
+  background-color: #8b0000;
+  color: var(--color-dorado);
+}
+

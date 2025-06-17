@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil de usuario</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="scroll-bg">
+
+  <nav class="navbar navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html">← Volver</a>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <h2 class="fantasy-title">Perfil</h2>
+    <p id="username" class="text parchment-text">Cargando usuario...</p>
+
+    <div class="form-check form-switch parchment-box my-3 p-3">
+      <input class="form-check-input" type="checkbox" id="soloCreadas" />
+      <label class="form-check-label" for="soloCreadas">Mostrar solo partidas creadas</label>
+    </div>
+
+    <hr class="parchment-divider" />
+    <h4 class="fantasy-subtitle">Historial de partidas</h4>
+    <div id="historial" class="card-fantasy p-3 mt-3"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/perfil.js"></script>
+</body>
+</html>

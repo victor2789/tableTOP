@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Detalles de la partida</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="main.html">← Volver</a>
+    </div>
+  </nav>
+
+  <div class="container mt-4" id="contenido">
+    <div class="text-center">Cargando partida...</div>
+  </div>
+
+  <div class="container mt-4" id="solicitantes-container" style="display:none;">
+    <h5 class="fantasy-subtitle">Solicitudes de unión</h5>
+    <ul id="solicitantesList" class="list-group"></ul>
+  </div>
+
+  <div class="position-fixed top-0 end-0 p-3" style="z-index: 9999">
+    <div id="toastContainer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/partida.js"></script>
+</body>
+</html>
